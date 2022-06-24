@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Footer, Header, Skills, Work } from "./container";
+import { About, Footer, Hero, Work } from "./container";
 import { Navbar } from "./components";
 import "./App.scss";
 
@@ -7,9 +7,8 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <Header />
+      <Hero />
       <About />
-      <Skills />
       <Work />
       <Footer />
     </div>

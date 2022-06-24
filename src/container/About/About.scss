@@ -1,0 +1,51 @@
+.app__aboutme {
+  min-height: 100vh;
+  padding: 4rem 1rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .app__aboutme-grid {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    .app__aboutme-profile {
+      border-radius: 4px;
+
+      .profile-title {
+        font-size: 20px;
+      }
+      .profile-text {
+        max-width: 70ch;
+      }
+    }
+
+    .app__aboutme-skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      cursor: pointer;
+
+      .skill {
+        padding: 0.5rem 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        border-radius: 50px;
+        background-color: #fff;
+
+        .skill-logo {
+          width: 25px;
+        }
+      }
+    }
+  }
+}
