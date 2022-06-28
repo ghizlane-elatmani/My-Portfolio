@@ -1,25 +1,112 @@
-.app {
-  font-family: var(--font-base);
-}
-
-.app__whitebg {
-  background-color: var(--white-color);
-}
-
-.app__primarybg {
-  background-color: var(--primary-color);
-}
-
-.app__container {
-  width: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: row;
-}
-
-.app__flex {
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// =========================== MARGIN-BOTTOM ===========================
+.mb--05 {
+  margin-bottom: 0.5rem;
+}
+
+.mb--1 {
+  margin-bottom: 1rem;
+}
+
+.mb--105 {
+  margin-bottom: 1.5rem;
+}
+
+.mb--2 {
+  margin-bottom: 2rem;
+}
+
+.mb--205 {
+  margin-bottom: 2.5rem;
+}
+
+.mb--3 {
+  margin-bottom: 3rem;
+}
+
+// =========================== TYPOGRAPHIE ===========================
+.heading-1 {
+  font-family: var(--font-title);
+  font-size: clamp(2.625rem, 1.2857rem + 3.5714vw, 4rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.05;
+
+  span {
+    color: var(--color-blue);
+  }
+}
+
+.heading-2 {
+  font-family: var(--font-title);
+  font-size: clamp(1.5rem, 0.9643rem + 1.4286vw, 2.25rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-blue-dark);
+
+  span {
+    color: var(--color-blue);
+  }
+}
+
+.subtitle-1 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1rem;
+  }
+}
+
+.body-1 {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.5;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1.125rem;
+  }
+}
+
+// =========================== BUTTON ===========================
+.btn {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1rem;
+  }
+}
+
+.btn--white {
+  background-color: var(--color-blue-lighter);
+  color: var(--color-blue);
+}
+
+.btn--glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  color: var(--color-blue-lighter);
 }

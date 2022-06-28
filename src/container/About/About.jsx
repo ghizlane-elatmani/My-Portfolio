@@ -63,24 +63,33 @@ const About = () => {
 
   return (
     <section id="aboutme" className="app__aboutme">
-      <h2>About me & Skills</h2>
+      <h2 className="heading-2 mb--3">
+        About me <span>&</span> Skills
+      </h2>
 
       <div className="app__aboutme-grid">
-        <div className="app__aboutme-profile">
-          <h3 className="profile-title">👋 Hi, I'm Ghizlane</h3>
-          <p className="profile-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum illo
-            aliquam cupiditate ab. Sed expedita culpa provident, quas vel
-            distinctio, id dolorum impedit voluptas quae nisi aliquam magnam
-            consequatur! Quas facilis debitis asperiores fugit excepturi
-            laudantium, consectetur possimus. Dolorem, maiores?
+        <div className="app__aboutme-profile mb--2">
+          <h3 className="profile-title mb--05">👋 Hello, I'm Ghizlane</h3>
+          <p className="body-1">
+            I’m passionate about building things for the web. I started my
+            journey as an android developer after high school. I found a
+            tutorial on how to code a basic application with java, and once that
+            happened, I was completely hooked to the world of computers. <br />
+            <br /> I learn how to code by studying multiple field like database
+            structure, how works a backend application with Java and his
+            framework Spring. <br />
+            <br />
+            Lately, I’ve discovered my passion for the world of web development
+            and the beauty behind building useful websites like the one you will
+            find in this portfolio. I’m now looking for a junior dev position to
+            finally kick start my career and learn among professionals.
           </p>
         </div>
 
         <div className="app__aboutme-skills">
-          {skills.map((item) => {
+          {skills.map((item, index) => {
             return (
-              <div className="skill">
+              <div className="skill" key={index}>
                 <img className="skill-logo" src={item.logo} alt="" />
                 <p className="skill-name">{item.name}</p>
               </div>

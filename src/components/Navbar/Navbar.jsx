@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FaGithub, FaLinkedinIn, FaGripLines, FaTimes } from "react-icons/fa";
 import { images } from "../../constants";
 import { MenuItems } from "./MenuItems";
@@ -6,6 +6,7 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   const navList = useRef();
 
   const handleClick = () => {
@@ -19,8 +20,18 @@ const Navbar = () => {
     }
   };
 
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeNav);
+
   return (
-    <nav className="Navbar">
+    <nav className={navbar ? "Navbar active" : "Navbar"}>
       <div className="nav-container">
         <img src={images.logo} alt="" className="nav-logo" />
 

@@ -2,9 +2,9 @@
   position: relative;
   min-height: 100vh;
   margin-inline: auto;
-  padding-top: 6rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+
+  padding: 0 1rem;
+
   background-image: url(../../assets/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -13,92 +13,23 @@
   .app__header-cta {
     max-width: 1200px;
     margin-inline: auto;
-
-    color: var(--white-color);
-
-    display: grid;
     flex: 1 1 0px;
 
-    .cta-subtitle {
-      font-size: 24px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #ced4da;
-      margin-bottom: 0.5rem;
+    .subtitle-1 {
+      color: var(--color-blue-light-1);
     }
 
-    .cta-title {
-      font-size: 45px;
-      font-weight: 600;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-
-      span {
-        color: var(--secondary-color);
-      }
-    }
-
-    .cta-text {
-      font-size: 24px;
-      max-width: 30ch;
-      margin-bottom: 2rem;
+    .heading-1,
+    .body-1 {
+      color: var(--color-blue-lighter);
+      max-width: 32ch;
     }
 
     .cta-btn {
       display: flex;
+      flex-wrap: wrap;
       gap: 1rem;
-      margin-bottom: 1.5rem;
-
-      button {
-        padding: 0.7rem 1.3rem;
-        font-size: 16px;
-        border-radius: 4px;
-        border: none;
-        cursor: pointer;
-        color: var(--secondary-color-darker);
-      }
-
-      .btn-white {
-        background-color: var(--white-color);
-
-        display: flex;
-        align-items: center;
-        gap: 0.3rem;
-
-        svg {
-          font-size: 18px;
-        }
-      }
-
-      .btn-glass {
-        background: rgba(255, 255, 255, 0.25);
-
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        color: var(--white-color);
-      }
     }
     z-index: 3;
-  }
-
-  .cta-link {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 18px;
-
-    .link {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      cursor: pointer;
-
-      svg {
-        font-size: 20px;
-      }
-    }
   }
 }

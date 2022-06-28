@@ -1,14 +1,11 @@
 .Navbar {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: transparent;
   padding: 1rem;
   position: fixed;
   z-index: 200;
   width: 100%;
+
+  transition: all 0.5s ease-out;
 }
 
 .nav-container {
@@ -26,13 +23,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
 .nav-links {
+  font-weight: 500;
   text-decoration: none;
-  color: #fff;
+  color: var(--color-blue-lighter);
+  font-family: var(--font-title);
+}
+
+.nav-links:hover {
+  color: var(--color-blue-light-1);
 }
 
 .menu-icon {
@@ -52,6 +55,8 @@
   justify-content: center;
 
   cursor: pointer;
+
+  border: 1px solid transparent;
 }
 
 .menu-btn svg {
@@ -96,4 +101,21 @@
 .show .nav-links {
   text-decoration: none;
   color: #000;
+}
+
+.Navbar.active {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #000;
+
+  .nav-links {
+    color: #000;
+  }
+
+  .menu-btn {
+    border: 1px solid var(--color-blue-light-1);
+  }
 }
