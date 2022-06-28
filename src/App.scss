@@ -97,12 +97,18 @@
   }
 }
 
-.btn--white {
+.btn--white:link,
+.btn--white:hover,
+.btn--white:visited,
+.btn--white:active {
   background-color: var(--color-blue-lighter);
   color: var(--color-blue);
 }
 
-.btn--glass {
+.btn--glass:link,
+.btn--glass:hover,
+.btn--glass:visited,
+.btn--glass:active {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);

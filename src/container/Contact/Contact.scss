@@ -1,0 +1,48 @@
+.app__contact {
+  padding: 6rem 1rem;
+  font-family: var(--font-body);
+  @media screen and (max-width: 600px) {
+    padding: 4rem 1rem;
+  }
+
+  .app__contact-form {
+    max-width: 300px;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      font-family: var(--font-body);
+      align-self: flex-start;
+    }
+
+    input,
+    textarea {
+      font-family: var(--font-body);
+      margin-bottom: 2rem;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid var(--color-blue-dark);
+
+      &:focus {
+        border: 1px solid var(--color-blue);
+      }
+    }
+
+    .btn--white {
+      background-color: var(--color-white);
+      color: var(--color-blue);
+      font-family: var(--font-body);
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

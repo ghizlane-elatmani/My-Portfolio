@@ -61,14 +61,14 @@ const Work = () => {
             <p className="project-description">{item.description}</p>
 
             <div className="project-btn">
-              <button className="btn btn--white">
+              <a href={item.urlDemo} className="btn btn--white">
                 <FaEye />
                 DEMO
-              </button>
-              <button className="btn btn--white">
+              </a>
+              <a href={item.urlCode} className="btn btn--white">
                 <FaGithub />
                 CODE
-              </button>
+              </a>
             </div>
           </div>
         ))}

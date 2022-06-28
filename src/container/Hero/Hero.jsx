@@ -21,7 +21,9 @@ const Hero = () => {
             <FaCloudDownloadAlt />
             Resume
           </a>
-          <button className="btn btn--glass">Contact me</button>
+          <a href="#contact" className="btn btn--glass">
+            Contact me
+          </a>
         </div>
       </div>
     </section>

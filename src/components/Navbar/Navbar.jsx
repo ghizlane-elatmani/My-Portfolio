@@ -48,13 +48,16 @@ const Navbar = () => {
         </ul>
 
         <div className="menu-icon">
-          <button className="menu-btn">
+          <a
+            href="https://www.linkedin.com/in/ghizlane-el-atmani-a91732214/"
+            className="menu-btn"
+          >
             <FaLinkedinIn />
-          </button>
+          </a>
 
-          <button className="menu-btn">
+          <a href="https://github.com/ghizlane-elatmani" className="menu-btn">
             <FaGithub />
-          </button>
+          </a>
 
           <button className="menu-btn toggle" onClick={handleClick}>
             {isOpen ? <FaTimes /> : <FaGripLines />}
