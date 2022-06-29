@@ -56,7 +56,11 @@ const Work = () => {
       <div className="app__work-portfolio">
         {projects.map((item, index) => (
           <div key={index} className="app__work-project">
-            <img className="project-img" src={item.image} alt="" />
+            <img
+              className="project-img"
+              src={`src/assets/${item.name}.png`}
+              alt=""
+            />
 
             <p className="project-description">{item.description}</p>
 
