@@ -5,7 +5,7 @@ export const Projects = [
     description: "Application weather",
     urlCode: "#",
     urlDemo: "#",
-    image: "src/assets/project-weather.png",
+    image: "./src/assets/project-weather.png",
   },
   {
     title: "Country Quiz",
@@ -13,7 +13,7 @@ export const Projects = [
     description: "Application",
     urlCode: "https://github.com/ghizlane-elatmani/Country-quiz",
     urlDemo: "#",
-    image: "src/assets/project-quiz.png",
+    image: "./src/assets/project-quiz.png",
   },
   {
     title: "Todo",
@@ -21,7 +21,7 @@ export const Projects = [
     description: "Application",
     urlCode: "https://github.com/ghizlane-elatmani/Todo-App",
     urlDemo: "https://todo-app-ge.netlify.app/",
-    image: "src/assets/project-todo.png",
+    image: "./src/assets/project-todo.png",
   },
   {
     title: "WindBnb",
@@ -29,7 +29,7 @@ export const Projects = [
     description: "Application",
     urlCode: "https://github.com/ghizlane-elatmani/Windbnb",
     urlDemo: "https://windbnb-ge.netlify.app/",
-    image: "src/assets/project-windbnb.png",
+    image: "./src/assets/project-windbnb.png",
   },
   {
     title: "Edie homepage",
@@ -37,7 +37,7 @@ export const Projects = [
     description: "Application",
     urlCode: "https://github.com/ghizlane-elatmani/Edie-homepage",
     urlDemo: "https://edie-homepage-ge.netlify.app/",
-    image: "src/assets/project-edie.png",
+    image: "./src/assets/project-edie.png",
   },
   {
     title: "Checkout Page",
@@ -45,7 +45,7 @@ export const Projects = [
     description: "Application",
     urlCode: "https://github.com/ghizlane-elatmani/Checkout-Page",
     urlDemo: "https://checkout-page-ge.netlify.app/",
-    image: "src/assets/project-checkout.png",
+    image: "./src/assets/project-checkout.png",
   },
 
   {
@@ -54,6 +54,6 @@ export const Projects = [
     description: "Application",
     urlCode: "https://github.com/ghizlane-elatmani/Recipe-Page",
     urlDemo: "https://recipe-blog-ge.netlify.app/",
-    image: "src/assets/project-recipe.png",
+    image: "./src/assets/project-recipe.png",
   },
 ];
