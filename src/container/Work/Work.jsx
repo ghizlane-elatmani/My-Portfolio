@@ -58,7 +58,7 @@ const Work = () => {
           <div key={index} className="app__work-project">
             <img
               className="project-img"
-              src={`src/assets/${item.name}.png`}
+              src={`images/${item.name}.png`}
               alt=""
             />
 
