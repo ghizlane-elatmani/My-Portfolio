@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaGithub, FaLinkedinIn, FaGripLines, FaTimes } from "react-icons/fa";
 import { images } from "../../constants";
 import { MenuItems } from "./MenuItems";
+import { Link } from "react-scroll";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -28,6 +29,11 @@ const Navbar = () => {
     }
   };
 
+  const closeMenu = () => {
+    navList.current.classList.remove("show");
+    setIsOpen(false);
+  };
+
   window.addEventListener("scroll", changeNav);
 
   return (
@@ -39,9 +45,17 @@ const Navbar = () => {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a className={item.cName} href={item.url}>
+                <Link
+                  to={item.url}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={300}
+                  className={item.cName}
+                  onClick={closeMenu}
+                >
                   {item.title}
-                </a>
+                </Link>
               </li>
             );
           })}

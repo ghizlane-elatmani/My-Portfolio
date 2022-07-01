@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Contact.scss";
 import emailjs from "emailjs-com";
+import { FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
   const form = useRef();
@@ -24,19 +25,39 @@ const Contact = () => {
 
   return (
     <section id="contact" className="app__contact">
-      <h2 className="heading-2 mb--3">Contact Me</h2>
-
       <form className="app__contact-form" ref={form} onSubmit={sendEmail}>
+        <h2 className="heading-2 mb--3">Contact Me</h2>
+
         <label htmlFor="input-name">Name</label>
-        <input id="input-name" placeholder="Name" type="text" name="name" />
+        <input
+          className="input"
+          id="input-name"
+          placeholder="Name"
+          type="text"
+          name="name"
+        />
 
         <label htmlFor="input-email">Email</label>
-        <input id="input-email" placeholder="Email" type="email" name="email" />
+        <input
+          className="input"
+          id="input-email"
+          placeholder="Email"
+          type="email"
+          name="email"
+        />
 
         <label htmlFor="input-msg">Message</label>
-        <textarea id="input-msg" placeholder="Message" name="message" />
+        <textarea
+          className="input"
+          id="input-msg"
+          placeholder="Message"
+          name="message"
+        />
 
-        <input className="btn btn--white" type="submit" value="Send" />
+        <div className="btn btn--white" type="submit">
+          <FaPaperPlane />
+          <input type="submit" value="Send" />
+        </div>
       </form>
     </section>
   );

@@ -1,12 +1,12 @@
 export const Projects = [
-  {
-    title: "Weather App",
-    name: "project-weather",
-    tags: "react",
-    description: "Application weather",
-    urlCode: "#",
-    urlDemo: "#",
-  },
+  // {
+  //   title: "Weather App",
+  //   name: "project-weather",
+  //   tags: "react",
+  //   description: "Application weather",
+  //   urlCode: "#",
+  //   urlDemo: "#",
+  // },
   {
     title: "Country Quiz",
     name: "project-quiz",

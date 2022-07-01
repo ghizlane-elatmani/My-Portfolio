@@ -1,47 +1,102 @@
 .app__contact {
-  padding: 6rem 1rem;
+  padding: 10rem 1rem;
   font-family: var(--font-body);
+  color: var(--color-white);
+
+  background-image: url(../../assets/contact-back.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: repeat;
+
   @media screen and (max-width: 600px) {
     padding: 4rem 1rem;
   }
 
+  .heading-2 {
+    color: var(--color-white);
+  }
+
   .app__contact-form {
-    max-width: 300px;
+    max-width: 420px;
     margin-inline: auto;
+    padding: 2rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    outline: none;
+
     label {
       font-family: var(--font-body);
+      font-weight: 600;
       align-self: flex-start;
     }
 
-    input,
-    textarea {
+    .input {
       font-family: var(--font-body);
       margin-bottom: 2rem;
       width: 100%;
       padding: 0.5rem 1rem;
       border-radius: 4px;
-      outline: none;
-      border: 1px solid var(--color-blue-dark);
+
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
 
       &:focus {
-        border: 1px solid var(--color-blue);
+        border: 1px solid var(--color-white);
+        outline: none;
       }
     }
 
     .btn--white {
-      background-color: var(--color-white);
-      color: var(--color-blue);
+      width: auto;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+
       font-family: var(--font-body);
       transition: all 0.5s ease-in-out;
+      padding-inline: 1.5rem;
+
+      align-self: flex-end;
+      font-weight: 600;
+      color: var(--color-white);
+
+      cursor: default;
+
+      input {
+        background: none;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        color: var(--color-white);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
 
       &:hover {
         transform: translateY(-2px);
+      }
+
+      &:focus-within {
+        border: 1px solid var(--color-white);
       }
     }
   }
